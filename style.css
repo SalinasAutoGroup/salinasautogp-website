@@ -1,0 +1,9 @@
+body{margin:0;font-family:Poppins,sans-serif;background:#08172b;color:#fff}
+.hero{height:60vh;background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.6)),url('assets/hero.jpg') center/cover}
+.overlay{display:flex;flex-direction:column;justify-content:center;align-items:center;height:100%;text-align:center}
+h1{font-size:3rem;margin:0}.btn,.card{background:#0f6fff;color:#fff;text-decoration:none;border-radius:16px;padding:16px 22px;display:block;transition:.2s}
+.btn:hover,.card:hover{transform:translateY(-3px)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;padding:30px}
+.card{text-align:center;background:#11284a}
+.info{text-align:center;padding:20px}
+footer{text-align:center;padding:20px;color:#9bb5d6}

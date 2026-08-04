@@ -1,0 +1,1 @@
+console.log('Salinas AutoGroup landing ready');
