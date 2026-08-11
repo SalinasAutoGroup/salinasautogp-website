@@ -1818,16 +1818,19 @@ footer {
 
   /* APPLY NOW DE ARRIBA - SOLO CELULAR */
 .nav-apply {
+    min-width: 115px !important;
+    width: 115px !important;
+    padding: 14px 8px !important;
+
     white-space: nowrap !important;
-    width: auto !important;
-    min-width: 165px !important;
-    padding: 15px 18px !important;
+    flex-shrink: 0 !important;
 
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
 
     text-align: center !important;
+    font-size: 13px !important;
     line-height: 1 !important;
 }
   /* =========================
