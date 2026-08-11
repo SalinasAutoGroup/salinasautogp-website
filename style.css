@@ -76,31 +76,62 @@ body {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 18px;
-  padding: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  padding: 30px 40px;
+
+  background:
+    radial-gradient(circle at 50% 0%, rgba(18, 134, 255, 0.10), transparent 45%),
+    linear-gradient(180deg, #07111f 0%, #030914 100%);
+
+  border-top: 1px solid rgba(18, 134, 255, 0.35);
 }
 
 .card {
-  background: #1286ff;
+  min-height: 95px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(5, 14, 27, 0.82);
   color: #fff;
   text-decoration: none;
-  border-radius: 16px;
-  padding: 16px 22px;
-  display: block;
+
+  border: 1px solid rgba(18, 134, 255, 0.55);
+  border-radius: 12px;
+  padding: 18px 14px;
+
   text-align: center;
-  transition: .2s;
+  font-weight: 500;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+
+  transition: transform .22s ease,
+              border-color .22s ease,
+              box-shadow .22s ease,
+              background .22s ease;
 }
 
 .info {
-  text-align: center;
-  padding: 20px;
+  position: relative;
+  text-align: center;
+  padding: 38px 20px 30px;
+
+  background:
+    radial-gradient(circle at 70% 30%, rgba(18, 134, 255, 0.08), transparent 35%),
+    linear-gradient(180deg, #030914 0%, #020710 100%);
+
+  border-top: 1px solid rgba(18, 134, 255, 0.18);
 }
 
 footer {
-  text-align: center;
-  padding: 20px;
-  color: #9bb5d6;
+  text-align: center;
+  padding: 20px;
+
+  background: #020710;
+  color: #6f88a8;
+
+  border-top: 1px solid rgba(18, 134, 255, 0.10);
 }
 
 @media (max-width: 600px) {
