@@ -1909,3 +1909,26 @@ footer {
     object-fit: contain !important;
   }
 }
+/* ===== LOGO SIZE FINAL ===== */
+
+/* PC */
+@media (min-width: 769px) {
+  .nav-brand-logo {
+    width: 300px !important;
+    height: 95px !important;
+    object-fit: contain !important;
+  }
+
+  .navbar {
+    min-height: 105px !important;
+  }
+}
+
+/* CELULAR - DEJAR COMO ESTÁ */
+@media (max-width: 768px) {
+  .nav-brand-logo {
+    width: 150px !important;
+    height: 62px !important;
+    object-fit: contain !important;
+  }
+}
