@@ -1803,3 +1803,9 @@ footer {
     border-bottom: 1px solid rgba(18, 134, 255, .45) !important;
   }
 }
+.contact-subtitle {
+  width: 100%;
+  text-align: center;
+  display: block;
+  margin: 12px auto 25px;
+}
