@@ -1139,3 +1139,77 @@ footer {
   content: none !important;
   display: none !important;
 }
+/* ===== FINAL CONTACT ALIGNMENT FIX ===== */
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: stretch;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 260px;
+  padding: 35px 25px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Todos los iconos exactamente a la misma altura/tamaño */
+.contact-icon {
+  width: 58px;
+  height: 58px;
+  min-width: 58px;
+  min-height: 58px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 auto 18px;
+}
+
+/* Títulos iguales */
+.contact-item h3 {
+  margin: 0 0 12px;
+  min-height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Área principal de texto igual */
+.contact-main {
+  margin: 0 0 8px;
+  min-height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Texto pequeño inferior */
+.contact-item > span {
+  min-height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+/* En celular */
+@media (max-width: 800px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-item {
+    min-height: auto;
+    padding: 30px 20px;
+  }
+}
