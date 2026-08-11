@@ -1403,3 +1403,403 @@ footer {
   margin-left: auto;
   margin-right: auto;
 }
+/* TITLE */
+
+.premium-contact .contact-title {
+  margin: 0 !important;
+
+  color: #ffffff !important;
+
+  font-size: 2.5rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 2px !important;
+}
+
+.premium-contact .contact-title::before,
+.premium-contact .contact-title::after {
+  content: "" !important;
+
+  display: inline-block !important;
+
+  width: 70px !important;
+  height: 2px !important;
+
+  margin: 0 22px !important;
+
+  vertical-align: middle !important;
+
+  background: #1286ff !important;
+}
+
+.premium-contact .contact-subtitle {
+  margin: 10px 0 32px !important;
+
+  color: #c2cad5 !important;
+
+  font-size: 1rem !important;
+}
+
+
+/* MAIN BOX */
+
+.premium-contact .contact-grid {
+  width: 100% !important;
+  max-width: 1180px !important;
+
+  margin: 0 auto !important;
+  padding: 0 !important;
+
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+
+  overflow: hidden !important;
+
+  border: 1px solid #1286ff !important;
+  border-radius: 24px !important;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(5, 18, 35, .96),
+      rgba(1, 8, 18, .98)
+    ) !important;
+
+  box-shadow:
+    0 0 26px rgba(18, 134, 255, .16),
+    0 20px 50px rgba(0, 0, 0, .32) !important;
+}
+
+
+/* EACH QUADRANT */
+
+.premium-contact .contact-item {
+  min-height: 285px !important;
+
+  padding: 38px 24px !important;
+
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  box-sizing: border-box !important;
+
+  text-align: center !important;
+
+  background: transparent !important;
+
+  border: none !important;
+}
+
+
+/* GRID LINES */
+
+.premium-contact .contact-item:nth-child(1),
+.premium-contact .contact-item:nth-child(2) {
+  border-bottom: 1px solid rgba(18, 134, 255, .50) !important;
+}
+
+.premium-contact .contact-item:nth-child(1),
+.premium-contact .contact-item:nth-child(3) {
+  border-right: 1px solid rgba(18, 134, 255, .50) !important;
+}
+
+
+/* KILL OLD DECORATIONS */
+
+.premium-contact .contact-item::before,
+.premium-contact .contact-item::after,
+.premium-contact .contact-icon::before,
+.premium-contact .contact-icon::after,
+.premium-contact .contact-item h3::before,
+.premium-contact .contact-item h3::after,
+.premium-contact .contact-main::before,
+.premium-contact .contact-main::after,
+.premium-contact span::before,
+.premium-contact span::after {
+  content: none !important;
+  display: none !important;
+}
+
+
+/* ========================
+   PHONE
+======================== */
+
+.phone-icon {
+  width: 100px !important;
+  height: 100px !important;
+
+  margin: 0 auto 20px !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  border: none !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.phone-icon i {
+  color: #22c55e !important;
+
+  font-size: 78px !important;
+
+  text-shadow:
+    -2px -2px 0 #ffffff,
+     2px -2px 0 #ffffff,
+    -2px  2px 0 #ffffff,
+     2px  2px 0 #ffffff,
+     0 0 12px rgba(34, 197, 94, .22) !important;
+}
+
+
+/* ========================
+   GMAIL
+======================== */
+
+.gmail-logo {
+  position: relative;
+
+  width: 105px;
+  height: 78px;
+
+  margin: 0 auto 22px;
+
+  border-radius: 9px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #4285f4 0%,
+      #4285f4 22%,
+      #ffffff 22%,
+      #ffffff 78%,
+      #34a853 78%,
+      #34a853 100%
+    );
+
+  overflow: hidden;
+}
+
+.gmail-logo::before,
+.gmail-logo::after {
+  content: "";
+
+  position: absolute;
+  top: -7px;
+
+  width: 65px;
+  height: 18px;
+
+  background: #ea4335;
+}
+
+.gmail-logo::before {
+  left: -6px;
+  transform: rotate(35deg);
+}
+
+.gmail-logo::after {
+  right: -6px;
+  transform: rotate(-35deg);
+}
+
+.gmail-logo .gmail-middle {
+  position: absolute;
+
+  top: 16px;
+  left: 41px;
+
+  width: 23px;
+  height: 23px;
+
+  background: #fbbc05;
+
+  transform: rotate(45deg);
+}
+
+
+/* ========================
+   MAPS
+======================== */
+
+.maps-logo {
+  width: 95px;
+  height: 95px;
+
+  margin: 0 auto 22px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.maps-logo i {
+  font-size: 82px;
+
+  color: transparent;
+
+  background:
+    linear-gradient(
+      145deg,
+      #4285f4 0%,
+      #4285f4 23%,
+      #ea4335 23%,
+      #ea4335 45%,
+      #fbbc05 45%,
+      #fbbc05 66%,
+      #34a853 66%,
+      #34a853 100%
+    );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+
+/* ========================
+   HOURS
+======================== */
+
+.hours-logo {
+  width: 94px;
+  height: 94px;
+
+  margin: 0 auto 22px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 5px solid #268cff;
+  border-radius: 50%;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 0 16px rgba(38, 140, 255, .28);
+}
+
+.hours-logo i {
+  color: #268cff;
+
+  font-size: 50px;
+}
+
+
+/* ========================
+   TEXT
+======================== */
+
+.premium-contact .contact-item h3 {
+  margin: 0 0 15px !important;
+
+  color: #168cff !important;
+
+  font-size: 1.15rem !important;
+  font-weight: 700 !important;
+  letter-spacing: .7px !important;
+}
+
+.premium-contact .contact-main {
+  min-height: 58px !important;
+
+  margin: 0 0 10px !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  color: #ffffff !important;
+
+  font-size: 1.18rem !important;
+  font-weight: 500 !important;
+  line-height: 1.5 !important;
+
+  text-align: center !important;
+}
+
+.premium-contact .contact-item > span {
+  color: #c4ccd7 !important;
+
+  font-size: .92rem !important;
+  line-height: 1.6 !important;
+
+  text-align: center !important;
+}
+
+
+/* LINKS */
+
+.premium-contact .contact-text-link {
+  color: #ffffff !important;
+  text-decoration: none !important;
+
+  transition:
+    color .2s ease,
+    text-shadow .2s ease !important;
+}
+
+.premium-contact .contact-text-link:hover {
+  color: #168cff !important;
+
+  text-shadow:
+    0 0 10px rgba(22, 140, 255, .40) !important;
+}
+
+.premium-contact .contact-action {
+  color: #168cff !important;
+
+  text-decoration: none !important;
+
+  font-size: 1rem !important;
+
+  transition: color .2s ease !important;
+}
+
+.premium-contact .contact-action:hover {
+  color: #79c3ff !important;
+}
+
+
+/* ========================
+   MOBILE
+======================== */
+
+@media (max-width: 650px) {
+
+  .premium-contact {
+    padding: 34px 14px 40px !important;
+  }
+
+  .premium-contact .contact-title {
+    font-size: 1.65rem !important;
+  }
+
+  .premium-contact .contact-title::before,
+  .premium-contact .contact-title::after {
+    width: 28px !important;
+    margin: 0 9px !important;
+  }
+
+  .premium-contact .contact-subtitle {
+    font-size: .82rem !important;
+  }
+
+  .premium-contact .contact-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .premium-contact .contact-item {
+    min-height: 250px !important;
+
+    border-right: none !important;
+  }
+
+  .premium-contact .contact-item:not(:last-child) {
+    border-bottom: 1px solid rgba(18, 134, 255, .45) !important;
+  }
+}
