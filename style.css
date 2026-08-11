@@ -1869,3 +1869,21 @@ footer {
   }
 
 }
+* ===== LOGO SALINAS AUTOGROUP ===== */
+
+/* PC */
+.nav-brand-logo {
+  display: block;
+  width: 260px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* CELULAR */
+@media (max-width: 768px) {
+  .nav-brand-logo {
+    width: 185px;
+    height: auto;
+    max-width: 42vw;
+  }
+}
