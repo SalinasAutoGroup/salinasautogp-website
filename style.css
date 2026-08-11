@@ -1816,7 +1816,20 @@ footer {
 
 @media (max-width: 768px) {
 
-  
+  /* APPLY NOW DE ARRIBA - SOLO CELULAR */
+.nav-apply {
+    white-space: nowrap !important;
+    width: auto !important;
+    min-width: 165px !important;
+    padding: 15px 18px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    text-align: center !important;
+    line-height: 1 !important;
+}
   /* =========================
      BOTÓN APPLY NOW
   ========================== */
@@ -1824,7 +1837,7 @@ footer {
   .apply-btn {
     white-space: nowrap !important;
     width: auto !important;
-    min-width: 165px !important;
+    min-width: 145px !important;
 
     padding: 15px 20px !important;
 
