@@ -1031,3 +1031,44 @@ footer {
     border-bottom: 1px solid rgba(18, 134, 255, 0.18);
   }
 }
+/* ===== PERFECT CONTACT ALIGNMENT ===== */
+
+.premium-contact .contact-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* ÍCONO perfectamente centrado */
+.premium-contact .contact-icon {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Rayitas decorativas centradas con el ícono */
+.premium-contact .contact-icon::before,
+.premium-contact .contact-icon::after {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Texto centrado debajo */
+.premium-contact .contact-item h3,
+.premium-contact .contact-item p,
+.premium-contact .contact-item span,
+.premium-contact .contact-item a {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Evita que elementos se recorran */
+.premium-contact .contact-item::before,
+.premium-contact .contact-item::after {
+  left: 50%;
+  transform: translateX(-50%);
+}
