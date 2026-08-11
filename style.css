@@ -432,3 +432,111 @@ footer {
     border-bottom: none;
   }
 }
+/* ===== PREMIUM SOCIAL CARDS ===== */
+
+.social-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 14px;
+  padding: 28px 40px;
+}
+
+.social-card {
+  min-height: 125px;
+  padding: 18px 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+
+  background: rgba(5, 14, 27, 0.78);
+  border: 1px solid rgba(18, 134, 255, 0.45);
+  border-radius: 14px;
+
+  text-align: center;
+  text-decoration: none;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.20);
+
+  transition:
+    transform .22s ease,
+    border-color .22s ease,
+    box-shadow .22s ease,
+    background .22s ease;
+}
+
+.brand-icon {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  margin-bottom: 4px;
+}
+
+.marketplace-brand,
+.website-brand {
+  filter: invert(45%) sepia(95%) saturate(3000%)
+          hue-rotate(190deg) brightness(105%);
+}
+
+.social-card strong {
+  color: #ffffff;
+  font-size: .88rem;
+  font-weight: 600;
+}
+
+.social-card span {
+  color: #8fa6c0;
+  font-size: .70rem;
+}
+
+.social-card:hover {
+  transform: translateY(-5px);
+  border-color: #1286ff;
+  background: rgba(10, 28, 52, 0.95);
+
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, .30),
+    0 0 20px rgba(18, 134, 255, .20);
+}
+
+.social-card:hover .brand-icon {
+  transform: scale(1.08);
+}
+
+.brand-icon {
+  transition: transform .22s ease;
+}
+
+
+/* ===== SOCIAL CARDS MOBILE ===== */
+
+@media (max-width: 900px) {
+
+  .social-grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+    gap: 12px;
+  }
+
+  .social-card {
+    min-height: 110px;
+  }
+
+}
+
+@media (max-width: 500px) {
+
+  .social-grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 16px;
+    gap: 10px;
+  }
+
+  .brand-icon {
+    width: 27px;
+    height: 27px;
+  }
+
+}
