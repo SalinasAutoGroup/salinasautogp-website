@@ -1912,3 +1912,39 @@ footer {
   }
 
 }
+/* SOLO CENTRAR REDES EN CELULAR */
+@media screen and (max-width: 768px) {
+
+  body main.grid.social-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+
+    width: 100% !important;
+    max-width: 100% !important;
+
+    margin: 0 !important;
+    padding: 25px 16px !important;
+
+    transform: none !important;
+    left: auto !important;
+    right: auto !important;
+
+    box-sizing: border-box !important;
+  }
+
+  body main.grid.social-grid > .social-card {
+    width: calc(100% - 8px) !important;
+    max-width: 500px !important;
+
+    margin-left: auto !important;
+    margin-right: auto !important;
+
+    transform: none !important;
+    left: auto !important;
+    right: auto !important;
+
+    box-sizing: border-box !important;
+  }
+
+}
