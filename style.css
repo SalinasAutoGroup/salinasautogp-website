@@ -1882,3 +1882,33 @@ footer {
   }
 
 }
+/* ===== ARREGLO SOLO PARA CELULAR ===== */
+@media (max-width: 768px) {
+
+  main.social-grid {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+
+    width: 100% !important;
+    max-width: 100% !important;
+
+    margin-left: auto !important;
+    margin-right: auto !important;
+
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+
+    box-sizing: border-box !important;
+  }
+
+  main.social-grid .social-card {
+    width: 100% !important;
+    max-width: 100% !important;
+
+    margin-left: auto !important;
+    margin-right: auto !important;
+
+    box-sizing: border-box !important;
+  }
+
+}
