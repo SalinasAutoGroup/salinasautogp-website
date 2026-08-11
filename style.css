@@ -1118,3 +1118,24 @@ footer {
   margin-left: auto;
   margin-right: auto;
 }
+/* ===== ONLY TEXT LINKS CLICKABLE ===== */
+
+.contact-text-link {
+  color: #ffffff;
+  text-decoration: none !important;
+  position: relative;
+  display: inline-block;
+  transition: color .2s ease, text-shadow .2s ease;
+}
+
+.contact-text-link:hover {
+  color: #1286ff;
+  text-shadow: 0 0 10px rgba(18, 134, 255, 0.45);
+}
+
+/* Quitar rayitas/decoraciones viejas de los links */
+.contact-text-link::before,
+.contact-text-link::after {
+  content: none !important;
+  display: none !important;
+}
