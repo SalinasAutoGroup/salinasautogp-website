@@ -1809,3 +1809,76 @@ footer {
   display: block;
   margin: 12px auto 25px;
 }
+* =========================================
+   MOBILE ONLY - SALINAS AUTOGROUP
+   NO AFECTA DESKTOP
+========================================= */
+
+@media (max-width: 768px) {
+
+  /* REDES SOCIALES */
+  .social-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    width: 100% !important;
+    padding: 25px 18px !important;
+    gap: 16px !important;
+    box-sizing: border-box !important;
+  }
+
+  /* CADA TARJETA */
+  .social-card {
+    width: 100% !important;
+    max-width: 680px !important;
+    min-height: 150px !important;
+
+    margin: 0 auto !important;
+    padding: 25px 30px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+
+    box-sizing: border-box !important;
+  }
+
+  /* CONTENIDO DE LAS TARJETAS */
+  .social-card > * {
+    box-sizing: border-box;
+  }
+
+
+  /* =========================
+     BOTÓN APPLY NOW
+  ========================== */
+
+  .apply-btn {
+    white-space: nowrap !important;
+    width: auto !important;
+    min-width: 145px !important;
+
+    padding: 15px 20px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    text-align: center !important;
+    line-height: 1 !important;
+  }
+
+
+  /* =========================
+     CONTACT US
+  ========================== */
+
+  .contact-subtitle {
+    width: 100% !important;
+    text-align: center !important;
+    margin: 12px auto 25px !important;
+    padding: 0 20px !important;
+    box-sizing: border-box !important;
+  }
+
+}
