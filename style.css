@@ -976,3 +976,58 @@ footer {
     border-bottom: 1px solid rgba(18, 134, 255, 0.18);
   }
 }
+/* ===== CONTACT DESKTOP FIX ===== */
+
+.premium-contact {
+  padding: 34px 40px 38px;
+}
+
+.premium-contact .contact-grid {
+  max-width: 1250px;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 18px 8px;
+}
+
+.premium-contact .contact-item {
+  min-height: 150px;
+  padding: 12px 18px;
+}
+
+.premium-contact .contact-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 12px;
+}
+
+.premium-contact .contact-title {
+  margin-bottom: 4px;
+}
+
+.contact-subtitle {
+  margin-bottom: 22px;
+}
+
+
+/* SOLO APILAR EN PANTALLAS PEQUEÑAS */
+
+@media (max-width: 650px) {
+
+  .premium-contact {
+    padding: 30px 14px;
+  }
+
+  .premium-contact .contact-grid {
+    grid-template-columns: 1fr;
+    padding: 8px;
+  }
+
+  .premium-contact .contact-item {
+    min-height: 150px;
+    padding: 24px 12px;
+    border-right: none !important;
+  }
+
+  .premium-contact .contact-item:not(:last-child) {
+    border-bottom: 1px solid rgba(18, 134, 255, 0.18);
+  }
+}
