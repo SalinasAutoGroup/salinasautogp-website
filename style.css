@@ -408,3 +408,27 @@ footer {
     margin: 0 10px;
   }
 }
+/* ===== CONTACT DESKTOP FIX ===== */
+
+@media (min-width: 801px) {
+
+  .contact-grid {
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    width: 100%;
+    max-width: 1200px;
+    padding: 35px 20px;
+    align-items: stretch;
+  }
+
+  .contact-item {
+    width: auto !important;
+    min-width: 0;
+    padding: 15px 20px;
+  }
+
+  .contact-item:not(:last-child) {
+    border-right: 1px solid rgba(18, 134, 255, 0.25);
+    border-bottom: none;
+  }
+}
