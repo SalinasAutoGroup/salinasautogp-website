@@ -1815,28 +1815,7 @@ footer {
 ========================================= */
 
 @media (max-width: 768px) {
-/* CENTRAR TARJETAS SOCIALES SOLO EN CELULAR */
-.social-grid {
-    width: calc(100vw - 32px) !important;
-    max-width: none !important;
-    margin-left: 16px !important;
-    margin-right: 16px !important;
-    padding: 20px 0 !important;
 
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: stretch !important;
-    gap: 16px !important;
-
-    box-sizing: border-box !important;
-}
-
-.social-grid .social-card {
-    width: 100% !important;
-    max-width: none !important;
-    margin: 0 !important;
-    box-sizing: border-box !important;
-}
   
   /* =========================
      BOTÓN APPLY NOW
