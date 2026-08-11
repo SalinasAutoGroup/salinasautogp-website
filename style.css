@@ -292,10 +292,13 @@ footer {
     display: none;
   }
 
-  .nav-apply {
+.nav-apply {
     font-size: 10px;
     padding: 9px 12px;
-  }
+    white-space: nowrap;
+    min-width: max-content;
+    flex-shrink: 0;
+}  
 }
 /* ===== PREMIUM CONTACT SECTION ===== */
 
