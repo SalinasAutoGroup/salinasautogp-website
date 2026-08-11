@@ -1072,3 +1072,49 @@ footer {
   left: 50%;
   transform: translateX(-50%);
 }
+/* ===== CLEAN OLD CONTACT DECORATIONS ===== */
+
+.premium-contact .contact-item::before,
+.premium-contact .contact-item::after,
+.premium-contact .contact-icon::before,
+.premium-contact .contact-icon::after,
+.premium-contact .contact-item h3::before,
+.premium-contact .contact-item h3::after,
+.premium-contact .contact-main::before,
+.premium-contact .contact-main::after,
+.premium-contact .contact-item span::before,
+.premium-contact .contact-item span::after {
+  content: none !important;
+  display: none !important;
+}
+
+/* Dejamos SOLO las líneas bonitas del título CONTACT US */
+
+.premium-contact .contact-title::before,
+.premium-contact .contact-title::after {
+  content: "";
+  display: inline-block;
+  width: 45px;
+  height: 1px;
+  background: #1286ff;
+  vertical-align: middle;
+  margin: 0 16px;
+}
+
+/* Íconos limpios */
+
+.premium-contact .contact-icon {
+  position: relative;
+  margin: 0 auto 14px;
+}
+
+/* Texto limpio y centrado */
+
+.premium-contact .contact-item h3,
+.premium-contact .contact-main,
+.premium-contact .contact-item span {
+  width: 100%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
