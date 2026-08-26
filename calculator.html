@@ -1,1 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>Payment Calculator | Salinas AutoGroup</title>
+
+  <link rel="stylesheet" href="assets/calculator.css">
+</head>
+
+<body>
+
+  <header class="calculator-header">
+    <a href="index.html" class="back-link">← Salinas AutoGroup</a>
+  </header>
+
+  <main class="calculator-page">
+
+    <section class="calculator-intro">
+      <span class="eyebrow">SALINAS AUTOGROUP</span>
+
+      <h1>Estimate Your Payment</h1>
+
+      <p>
+        Adjust the vehicle price, down payment and loan term
+        to see an estimated monthly payment range.
+      </p>
+    </section>
+
+
+    <section class="calculator-layout">
+
+      <div class="calculator-controls">
+
+        <div class="field-group">
+          <label for="vehiclePrice">Vehicle Price</label>
+
+          <div class="money-input">
+            <span>$</span>
+
+            <input
+              type="number"
+              id="vehiclePrice"
+              value="20000"
+              min="0"
+              step="100"
+              inputmode="decimal"
+            >
+          </div>
+        </div>
+
+
+        <div class="field-group">
+          <label for="downPayment">Down Payment</label>
+
+          <div class="money-input">
+            <span>$</span>
+
+            <input
+              type="number"
+              id="downPayment"
+              value="3500"
+              min="0"
+              step="100"
+              inputmode="decimal"
+            >
+          </div>
+
+          <input
+            type="range"
+            id="downPaymentSlider"
+            min="0"
+            max="15000"
+            step="250"
+            value="3500"
+          >
+        </div>
+
+
+        <div class="field-group">
+          <label>Loan Term</label>
+
+          <div class="term-options">
+
+            <button type="button" class="term-button" data-term="24">
+              24 Months
+            </button>
+
+            <button type="button" class="term-button" data-term="36">
+              36 Months
+            </button>
+
+            <button type="button" class="term-button active" data-term="48">
+              48 Months
+            </button>
+
+          </div>
+        </div>
+
+
+        <div class="advanced-section">
+
+          <button
+            type="button"
+            id="advancedToggle"
+            class="advanced-toggle"
+          >
+            Advanced Options
+            <span>+</span>
+          </button>
+
+
+          <div id="advancedOptions" class="advanced-options">
+
+            <div class="field-group">
+              <label for="customApr">
+                Custom APR
+              </label>
+
+              <div class="percent-input">
+                <input
+                  type="number"
+                  id="customApr"
+                  value="12"
+                  min="0"
+                  max="40"
+                  step="0.01"
+                  inputmode="decimal"
+                >
+
+                <span>%</span>
+              </div>
+
+              <p class="field-note">
+                Optional. Use a specific rate to calculate a single estimated payment.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="payment-result">
+
+        <span class="result-label">
+          Estimated Monthly Payment
+        </span>
+
+        <div class="payment-range">
+          <span id="minimumPayment">$433</span>
+          <span class="payment-dash">–</span>
+          <span id="maximumPayment">$594</span>
+          <small>/mo</small>
+        </div>
+
+        <p id="paymentDescription" class="payment-description">
+          Based on estimated financing terms and lender approval.
+        </p>
+
+
+        <div class="finance-breakdown">
+
+          <div class="breakdown-row">
+            <span>Vehicle Price</span>
+            <strong id="displayVehiclePrice">$20,000</strong>
+          </div>
+
+          <div class="breakdown-row">
+            <span>Estimated Taxes (6.25%)</span>
+            <strong id="displayTaxes">$1,250</strong>
+          </div>
+
+          <div class="breakdown-row">
+            <span>Estimated Fees</span>
+            <strong>$317</strong>
+          </div>
+
+          <div class="breakdown-row">
+            <span>Down Payment</span>
+            <strong id="displayDownPayment">−$3,500</strong>
+          </div>
+
+          <div class="breakdown-row total-row">
+            <span>Estimated Amount Financed</span>
+            <strong id="amountFinanced">$18,067</strong>
+          </div>
+
+          <div class="breakdown-row">
+            <span>Loan Term</span>
+            <strong id="displayTerm">48 Months</strong>
+          </div>
+
+          <div class="breakdown-row">
+            <span>Estimated APR Range</span>
+            <strong id="displayApr">6.99% – 24.52%</strong>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section class="payoff-section">
+
+      <div class="section-heading">
+        <span>PAY IT OFF SOONER</span>
+
+        <h2>See What Extra Payments Can Do</h2>
+
+        <p>
+          Enter a little extra each month and see how much sooner
+          you could finish paying your vehicle.
+        </p>
+      </div>
+
+
+      <div class="payoff-grid">
+
+        <div class="field-group">
+
+          <label for="extraPayment">
+            Extra Monthly Payment
+          </label>
+
+          <div class="money-input">
+            <span>$</span>
+
+            <input
+              type="number"
+              id="extraPayment"
+              value="0"
+              min="0"
+              step="10"
+              inputmode="decimal"
+            >
+          </div>
+
+          <div class="extra-buttons">
+
+            <button type="button" data-extra="50">
+              +$50
+            </button>
+
+            <button type="button" data-extra="80">
+              +$80
+            </button>
+
+            <button type="button" data-extra="100">
+              +$100
+            </button>
+
+            <button type="button" data-extra="200">
+              +$200
+            </button>
+
+          </div>
+
+        </div>
+
+
+        <div class="payoff-results">
+
+          <div class="payoff-stat">
+            <span>Regular Payment</span>
+            <strong id="regularPayment">$0/mo</strong>
+          </div>
+
+          <div class="payoff-stat">
+            <span>New Monthly Payment</span>
+            <strong id="newPayment">$0/mo</strong>
+          </div>
+
+          <div class="payoff-stat highlight">
+            <span>Estimated Time Saved</span>
+            <strong id="monthsSaved">0 months</strong>
+          </div>
+
+          <div class="payoff-stat highlight">
+            <span>Estimated Interest Saved</span>
+            <strong id="interestSaved">$0</strong>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section class="calculator-disclaimer">
+
+      <p>
+        Payment estimates are for informational purposes only and are not
+        an offer or guarantee of credit. Actual APR, down payment, taxes,
+        fees, payment amount, loan term and approval may vary based on
+        lender requirements, credit profile, income and vehicle.
+      </p>
+
+    </section>
+
+  </main>
+
+
+  <script src="assets/calculator.js"></script>
+
+</body>
+</html>
