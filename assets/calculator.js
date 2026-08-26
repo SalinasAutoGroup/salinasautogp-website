@@ -5,13 +5,16 @@ const MIN_APR = 6.99;
 const MAX_APR = 24.52;
 
 let selectedTerm = 48;
+let selectedPresetTerm = 48;
 let customAprActive = false;
 
 const vehiclePriceInput = document.getElementById("vehiclePrice");
 const downPaymentInput = document.getElementById("downPayment");
 const downPaymentSlider = document.getElementById("downPaymentSlider");
 const customAprInput = document.getElementById("customApr");
+const customTermInput = document.getElementById("customTerm");
 const extraPaymentInput = document.getElementById("extraPayment");
+
 
 const minimumPayment = document.getElementById("minimumPayment");
 const maximumPayment = document.getElementById("maximumPayment");
