@@ -1949,3 +1949,23 @@ footer {
     align-items: center !important;
   }
 }
+.grid.social-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 14px;
+}
+
+.grid.social-grid .social-card {
+  flex: 1 1 170px;
+  max-width: 220px;
+  min-width: 150px;
+}
+
+@media (max-width: 480px) {
+  .grid.social-grid .social-card {
+    flex: 1 1 140px;
+    max-width: none;
+  }
+}
