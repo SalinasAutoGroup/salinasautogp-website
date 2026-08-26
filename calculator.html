@@ -116,6 +116,7 @@
             <div class="field-group">
               <label for="customApr">
                 Custom APR
+              
               </label>
 
               <div class="percent-input">
@@ -136,7 +137,29 @@
                 Optional. Use a specific rate to calculate a single estimated payment.
               </p>
             </div>
+<div class="field-group">
+  <label for="customTerm">
+    Custom Loan Term
+  </label>
 
+  <div class="term-input">
+    <input
+      type="number"
+      id="customTerm"
+      min="1"
+      max="84"
+      step="1"
+      inputmode="numeric"
+      placeholder="Example: 54"
+    >
+
+    <span>months</span>
+  </div>
+
+  <p class="field-note">
+    Optional. Enter a custom loan term such as 30, 31, 42, 54 or 60 months.
+  </p>
+</div>
           </div>
 
         </div>
