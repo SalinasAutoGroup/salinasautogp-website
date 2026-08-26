@@ -2014,3 +2014,27 @@ footer {
     grid-row: 4 !important;
   }
 }
+.navbar,
+.nav-links,
+.nav-apply {
+  position: relative !important;
+}
+
+.navbar {
+  z-index: 9998 !important;
+}
+
+.nav-links,
+.nav-apply {
+  z-index: 9999 !important;
+}
+
+.nav-apply {
+  pointer-events: auto !important;
+  cursor: pointer !important;
+}
+
+.nav-apply::before,
+.nav-apply::after {
+  pointer-events: none !important;
+}
