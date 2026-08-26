@@ -317,7 +317,10 @@ function updateCalculator() {
 
 termButtons.forEach(button => {
   button.addEventListener("click", () => {
-    selectedTerm = Number(button.dataset.term);
+    selectedPresetTerm = Number(button.dataset.term);
+    selectedTerm = selectedPresetTerm;
+
+    customTermInput.value = "";
 
     termButtons.forEach(item => {
       item.classList.remove("active");
@@ -327,6 +330,41 @@ termButtons.forEach(button => {
 
     updateCalculator();
   });
+});
+
+
+customTermInput.addEventListener("input", () => {
+  const rawValue = customTermInput.value.trim();
+
+  if (rawValue === "") {
+    selectedTerm = selectedPresetTerm;
+
+    termButtons.forEach(button => {
+      button.classList.toggle(
+        "active",
+        Number(button.dataset.term) === selectedPresetTerm
+      );
+    });
+
+    updateCalculator();
+    return;
+  }
+
+  let customTerm = parseInt(rawValue, 10);
+
+  if (!Number.isFinite(customTerm)) {
+    return;
+  }
+
+  customTerm = Math.max(1, Math.min(84, customTerm));
+
+  selectedTerm = customTerm;
+
+  termButtons.forEach(button => {
+    button.classList.remove("active");
+  });
+
+  updateCalculator();
 });
 
 
